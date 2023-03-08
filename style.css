@@ -4,3 +4,223 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 70%;
+    margin-inline: auto;
+}
+
+body {
+	font-family: 'whitney';
+}
+
+/* ------  NAV  ------ */
+
+nav {
+    background-color: rgb(255,104,0);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav .container ul {
+    display: flex;
+    list-style-type: none
+}
+
+nav .container a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+nav .container a:hover {
+    background-color: rgb(175, 72, 4);
+    border-radius: 50px;
+}
+
+nav .container img {
+    max-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav .container span {
+    padding: 5px;
+}
+
+nav .container span:hover {
+    background-color: rgb(175, 72, 4);
+    border-radius: 50px;
+}
+
+
+
+/* ------  MAIN  ------ */
+
+main .container:first-child {
+    margin-top: 25px;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* IMMAGINI MODELLI */
+
+main .container img {
+    max-height: 455px;
+}
+
+main .container img:hover {
+    opacity: 0%;
+}
+
+.image {
+    flex: 0 0 10%;
+    margin: 30px 10px 10px 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#foto1 {
+    background-image: url(img/1b.webp);
+}
+
+#foto2 {
+    background-image: url(img/2b.webp);
+}
+
+#foto3 {
+    background-image: url(img/3b.webp);
+}
+
+#foto4 {
+    background-image: url(img/4b.webp);
+}
+
+#foto5 {
+    background-image: url(img/5b.webp);
+}
+
+#foto6 {
+    background-image: url(img/6b.webp);
+}
+
+/* ICONE NELLA FOTO */
+
+.sconto {
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    padding: 3px 8px;
+}
+
+#foto1 .sconto {
+    top: 490px;
+}
+
+#foto2 .sconto {
+    top: 490px;
+}
+
+#foto3 .sconto {
+    top: 490px;
+}
+
+#foto4 .sconto {
+    top: 1040px;
+}
+
+.sostenibile {
+    background-color: green;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    padding: 3px 8px;
+}
+
+#foto1 .sostenibile {
+    top: 490px;
+    left: 276px;
+}
+
+#foto4 .sostenibile {
+    top: 1040px;
+    left: 276px;
+}
+
+#foto6 .sostenibile {
+    top: 1040px;
+}
+
+.cuore {
+    background-color: white;
+    font-size: 15px;
+    position: absolute;
+    padding: 10px;
+}
+
+#foto1 .cuore {
+    top: 108px;
+    left: 506px;
+}
+
+#foto2 .cuore {
+    top: 108px;
+    left: 842px;
+}
+
+#foto3 .cuore {
+    top: 108px;
+    left: 1177px;
+}
+
+#foto4 .cuore {
+    top: 653px;
+    left: 506px;
+}
+
+#foto5 .cuore {
+    top: 653px;
+    left: 842px;
+}
+
+#foto6 .cuore {
+    top: 653px;
+    left: 1177px;
+}
+
+/* TESTO */
+
+.shop-info {
+    flex-direction: column;
+}
+
+.shop-info p:first-child {
+    color: grey;
+    font-size: 13px;
+}
+
+.shop-info span {
+    font-size: 14px;
+}
+
+.shop-info .price {
+    color: red;
+}
+
+.price-red {
+    color: red;
+    text-decoration-line: line-through;
+}
+
+
+/* ------  FOOTER  ------ */
+
+
