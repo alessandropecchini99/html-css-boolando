@@ -50,8 +50,8 @@ nav .container a:hover {
 
 nav .container img {
     max-height: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.65em;
+    margin-bottom: 0.65em;
 }
 
 nav .container span {
@@ -63,6 +63,9 @@ nav .container span:hover {
     border-radius: 50px;
 }
 
+nav .container #larghezza {
+    padding-left: 92.9px;
+}
 
 
 /* ------  MAIN  ------ */
