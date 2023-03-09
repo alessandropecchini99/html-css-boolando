@@ -128,19 +128,19 @@ main .container {
 .article .sconto {
     position: absolute;
     left: 0;
-    top: 400px;
+    bottom: 90px;
 }
 
 .article .sostenibile {
     position: absolute;
     left: 50px;
-    top: 400px;
+    bottom: 90px;
 }
 
 .article .alone {
     position: absolute;
     left: 0;
-    top: 400px;
+    bottom: 90px;
 }
 
 .article .cuore {
