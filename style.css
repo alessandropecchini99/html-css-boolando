@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 70%;
+    max-width: 1000px;
     margin-inline: auto;
 }
 
@@ -17,6 +17,12 @@ body {
 
 nav {
     background-color: rgb(255,104,0);
+    height: 3em;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 3;
 }
 
 nav .container {
@@ -61,166 +67,152 @@ nav .container span:hover {
 
 /* ------  MAIN  ------ */
 
-main .container:first-child {
-    margin-top: 25px;
-}
-
-main div {
+main .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 4em;
+    min-height: 500px;
 }
+
+.container .article {
+    flex: 0 0 calc((100% / 3) - 1em);
+    position: relative;
+    margin-top: 1em;
+}
+
 
 /* IMMAGINI MODELLI */
 
-main .container img {
-    max-height: 455px;
+.article .pic-a {
+    width: 100%;
 }
 
-main .container img:hover {
+.article .pic-b {
+    width: 100%;
+    position: absolute;
     opacity: 0%;
 }
 
-.image {
-    flex: 0 0 10%;
-    margin: 30px 10px 10px 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.article div:hover .pic-b {
+    opacity: 100%;
 }
 
-#foto1 {
-    background-image: url(img/1b.webp);
-}
-
-#foto2 {
-    background-image: url(img/2b.webp);
-}
-
-#foto3 {
-    background-image: url(img/3b.webp);
-}
-
-#foto4 {
-    background-image: url(img/4b.webp);
-}
-
-#foto5 {
-    background-image: url(img/5b.webp);
-}
-
-#foto6 {
-    background-image: url(img/6b.webp);
-}
 
 /* ICONE NELLA FOTO */
 
 .sconto {
     background-color: red;
     color: white;
+    height: min-content;
     font-size: 13px;
-    position: absolute;
     padding: 3px 8px;
-}
-
-#foto1 .sconto {
-    top: 490px;
-}
-
-#foto2 .sconto {
-    top: 490px;
-}
-
-#foto3 .sconto {
-    top: 490px;
-}
-
-#foto4 .sconto {
-    top: 1040px;
 }
 
 .sostenibile {
     background-color: green;
     color: white;
+    height: min-content;
     font-size: 13px;
-    position: absolute;
     padding: 3px 8px;
-}
-
-#foto1 .sostenibile {
-    top: 490px;
-    left: 276px;
-}
-
-#foto4 .sostenibile {
-    top: 1040px;
-    left: 276px;
-}
-
-#foto6 .sostenibile {
-    top: 1040px;
 }
 
 .cuore {
     background-color: white;
     font-size: 15px;
-    position: absolute;
+    height: max-content;
     padding: 10px;
 }
 
-#foto1 .cuore {
-    top: 108px;
-    left: 506px;
+.article .sconto {
+    position: absolute;
+    left: 0;
+    top: 400px;
 }
 
-#foto2 .cuore {
-    top: 108px;
-    left: 842px;
+.article .sostenibile {
+    position: absolute;
+    left: 50px;
+    top: 400px;
 }
 
-#foto3 .cuore {
-    top: 108px;
-    left: 1177px;
+.article .alone {
+    position: absolute;
+    left: 0;
+    top: 400px;
 }
 
-#foto4 .cuore {
-    top: 653px;
-    left: 506px;
+.article .cuore {
+    position: absolute;
+    top: 5px;
+    right: 0px;
 }
 
-#foto5 .cuore {
-    top: 653px;
-    left: 842px;
+.article .cuore:hover {
+    color: red;
 }
 
-#foto6 .cuore {
-    top: 653px;
-    left: 1177px;
-}
 
 /* TESTO */
 
-.shop-info {
-    flex-direction: column;
+.marca {
+    color: grey;
+    font-size: 15px;
 }
 
-.shop-info p:first-child {
-    color: grey;
+.price {
     font-size: 13px;
 }
 
-.shop-info span {
-    font-size: 14px;
-}
-
-.shop-info .price {
+.price .old-price {
     color: red;
+    text-decoration-line: line-through;
+    margin-left: 5px;
 }
 
 .price-red {
     color: red;
-    text-decoration-line: line-through;
+    font-size: 13px;
 }
+
 
 
 /* ------  FOOTER  ------ */
 
+footer{
+    background-color: rgb(26,26,26);
+    margin-top: 40px;
+}
 
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .container ul {
+    display: flex;
+    list-style-type: none;
+}
+
+footer .container a {
+    text-decoration: none;
+    color: white;
+    margin-right: 13px;
+    font-size: 15px;
+}
+
+footer .container h3 {
+    padding-bottom: 10px;
+}
+
+footer .container p {
+    padding-bottom: 10px;
+}
+
+footer .container span {
+    font-size: 23px;
+}
